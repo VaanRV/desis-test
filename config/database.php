@@ -3,7 +3,7 @@
     private $host = 'localhost';
     private $db_name = 'sistema_productos';
     private $username = 'postgres';
-    private $password = 'francisco';
+    private $password = '';
     private $port = '5432';
     public $conn;
 
