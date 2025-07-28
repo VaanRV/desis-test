@@ -35,6 +35,7 @@ textarea {
     font-size: 16px;
     font-family: Arial, sans-serif;
     transition: border-color 0.3s ease;
+    background-color: white;
 }
 
 input[type="text"]:focus,
@@ -92,6 +93,7 @@ textarea {
 
 .form-group {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .material-item {
@@ -125,7 +127,8 @@ textarea {
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-bottom: 10px !important;
 }
 
 .error-message {

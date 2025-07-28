@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadWarehouses() {
   const selectWarehouses = document.getElementById('warehouseProduct');
   selectWarehouses.disabled = true;
-  selectWarehouses.innerHTML = '<option value="">Seleccione una bodega</option>';
+  selectWarehouses.innerHTML = '<option value=""></option>';
 
   try {
     const response = await requestGenerator('php/warehouses.php', 'GET', null);
@@ -40,7 +40,6 @@ async function loadBranches() {
   const warehouseId = document.getElementById('warehouseProduct').value;
   const selectBranches = document.getElementById('brancheProduct');
   selectBranches.disabled = true;
-  selectBranches.innerHTML = '<option value="">Seleccione una sucursal</option>';
 
   if (!warehouseId) return;
 
@@ -70,7 +69,7 @@ async function loadBranches() {
 async function loadCurrencies() {
   const selectCurrencies = document.getElementById('currencyProduct');
   selectCurrencies.disabled = true;
-  selectCurrencies.innerHTML = '<option value="">Seleccione una moneda</option>';
+  selectCurrencies.innerHTML = '<option value=""></option>';
 
   try {
     const response = await requestGenerator('php/currencies.php', 'GET', null);
@@ -104,6 +103,7 @@ async function loadMaterials() {
       return;
     }
 
+    response.sort((a, b) => a.id - b.id);
     response.forEach((material) => {
       const div = document.createElement('div');
       const checkbox = document.createElement('input');

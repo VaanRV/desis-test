@@ -27,7 +27,7 @@
           <div class="form-group">
             <label for="warehouseProduct">Bodega</label>
             <select id="warehouseProduct" name="warehouseProduct">
-              <option value="">Seleccione una bodega</option>
+              <option value=""></option>
             </select>
             <span class="error-message" id="error_warehouse"></span>
           </div>
@@ -35,7 +35,7 @@
           <div class="form-group">
             <label for="brancheProduct">Sucursal</label>
             <select id="brancheProduct" name="brancheProduct" disabled>
-              <option value="">Seleccione una sucursal</option>
+              <option value=""></option>
             </select>
             <span class="error-message" id="error_branche"></span>
           </div>
@@ -43,7 +43,7 @@
           <div class="form-group">
             <label for="currencyProduct">Moneda</label>
             <select id="currencyProduct" name="currencyProduct">
-              <option value="">Seleccione una moneda</option>
+              <option value=""></option>
             </select>
             <span class="error-message" id="error_currency"></span>
           </div>

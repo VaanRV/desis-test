@@ -18,6 +18,8 @@ INSERT INTO monedas (codigo, nombre) VALUES
 ('EUR', 'Euro');
 
 INSERT INTO materiales (nombre) VALUES 
-('Oro'),
-('Plata'),
-('Bronce')
+('Plástico'),
+('Metal'),
+('Madera'),
+('Vidrio'),
+('Textil');
