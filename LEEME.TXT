@@ -9,9 +9,10 @@ PASOS DE INSTALACIÓN:
 ====================
 
 1. CONFIGURAR BASE DE DATOS:
-  - Crear una base de datos PostgreSQL llamada "sistema_productos"
-  - Ejecutar el archivo sql/database.sql para crear las tablas y datos de prueba
-  - Comando: psql -U postgres -d sistema_productos -f sql/database.sql
+  - En su IDE de base de datos, crear una base de datos PostgreSQL llamada "sistema_productos"
+  - Ejecutar el archivo sql/database.sql para crear las tablas
+  - Ejecutar el archivo sql/inserts.sql  para crear los datos de prueba
+  - Comprobar que se hayan creado las tablas con sus respectivos datos
 
 2. CONFIGURAR CONEXIÓN:
   - Abrir el archivo config/database.php
@@ -30,7 +31,7 @@ PASOS DE INSTALACIÓN:
 
    OPCIÓN B - XAMPP/WAMP:
    - Copiar el proyecto en la carpeta htdocs (XAMPP) o www (WAMP)
-   - Acceder a: http://localhost/sistema-productos
+   - Acceder a: http://localhost/desis-test
 
 4. VERIFICAR FUNCIONAMIENTO:
    - Acceder a la URL configurada
